@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    background-image: url(logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo-name {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a.active {
+    background-color: #444;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+.settings a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.headtext {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+/* Main content */
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+.employee-card, .room-card {
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.employee-info {
+    display: flex;
+    flex-direction: column; /* Change to column to stack Name and Room */
+    align-items: flex-start;
+    width: 100%; /* Ensure it takes full width */
+    margin-left: 20px;
+}
+
+/* Styles for clickable cards */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-link:hover .employee-card {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.card-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* Each column will hold half the cards */
+.column {
+    flex: 1;
+}
+
+
+
+

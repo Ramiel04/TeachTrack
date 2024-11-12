@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url(bj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-card {
+    position: relative;
+    z-index: 3;
+    width: 35%;
+    margin: 0 20px;
+    padding: 70px 30px 44px; /* Corrected padding syntax */
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.496);
+    text-align: center;
+    box-shadow: 5px 5px 15px 5px rgba(9, 9, 9, 0.301);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 50px;
+    color: #000000;
+}
+
+.login-form {
+    width: 100%;
+    margin: 0;
+    display: flex; /* Changed to flex */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px;
+    align-items: center; /* Center items horizontally */
+}
+
+.login-form input {
+    border: 2px solid #ebebeb;
+    width: 70%; /* Retain 70% width */
+    font-size: 20px;
+    padding: 0 25px;
+    border-radius: 14px;
+    transition: all 0.5s;
+    height: 60px;
+    margin: 0 auto; /* Center the input */
+}
+
+.login-form input:hover {
+    border: 5px solid rgb(255, 157, 0);
+}
+
+.login-form button {
+    cursor: pointer;
+    width: 50%; /* Retain 50% width */
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 157, 0, 0.495);
+    color: rgb(0, 0, 0);
+    border: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    margin: 0 auto; /* Center the button */
+}
+
+.login-form button:hover {
+    background: rgb(255, 157, 0);
+}
+
+.login-form a {
+    text-align: center;
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: 12px; /* Font size for the message */
+    display: none; /* Initially hidden */
+    margin-top: 5px; /* Spacing from input */
+}
